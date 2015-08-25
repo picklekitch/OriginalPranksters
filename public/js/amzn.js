@@ -14,8 +14,8 @@ $(function(){
       };
       var renderAmzn = function(e){
         $('#middle').text(name + ' ' + email + 'Your Amazon.com order of  ' + item + ' has shipped!');
-        $('#middle2').text('Hello ' + name + 'Order #002-0025687-7655223 will be shipped to ' + address + city + ', ' + state + ' ' + zip)
-        $('#middle3').text('Return or replace your items in Your Orders.')
+        $('#middle2').text('Hello ' + name + 'Order #002-0025687-7655223 will be shipped to ' + address + city + ', ' + state + ' ' + zip);
+        $('#middle3').text('Return or replace your items in Your Orders.');
         console.log('writing the middle section');
       };
       $('#btn-click').on('click', createAmzn);
