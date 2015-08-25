@@ -5,21 +5,20 @@ $(function(){
       var createFantasy = function(e){
         var name = document.getElementById('#name').value,
         var email = document.getElementById('#email').value,
-        var item = document.getElementById('#item').value,
-        var address = document.getElementById('#address').value,
-        var city = document.getElementById('#city').value,
-        var state = document.getElementById('#state').value,
-        var zip = document.getElementById('#zip').value,
+        var teamName = document.getElementById('#teamName').value,
+        var playerName = document.getElementById('#playerName').value,
+        var injury = document.getElementById('#injury').value,
+        var leagueName = document.getElementById('#leagueName').value,
         console.log('taking in form data ' + name + ' ' + email)
       };
       var renderFantasy = function(){
-        $('#middle').text(name + ' ' + email + 'Your Amazon.com order of  ' + item + ' has shipped!');
-        $('#middle2').text('Hello ' + name + 'Order #002-0025687-7655223 will be shipped to ' + address + city + ', ' + state + ' ' + zip)
-        $('#middle3').text('Return or replace your items in Your Orders.')
-        console.log('writing the middle section');
+        $('#middle').text(name + ' ' + email + 'Fantasy Football  ' + leagueName + ' - injury update!');
+        $('#middle2').text('Hello ' + name + ', ' + playerName + 'in your league' + leagueName 'is out for the year with a confirmed torn ACL. ' playerName + 'will require season-ending surgery. We suggest dropping this player ASAP.');
+        $('#middle3').text('--Fantasy Football Commissioner')
+          console.log('writing the middle section');
       };
-      $('#btn-click').on('click', createFantasy);
-      $('#btn-click').on('click', renderFantasy)
+        $('#btn-click').on('click', createFantasy);
+        $('#btn-click').on('click', renderFantasy)
   };
 })();
 
