@@ -3,15 +3,15 @@
 $(function(){
   var doctorModule = function(){
       var createDoctor = function(e){
-        var  = document.getElementById('#name').value,
-        var email = document.getElementById('#email').value,
-        var doctorSpecialty = document.getElementById('#doctorSpecialty').value,
-        var dayOfWeek = document.getElementById('#dayOfWeek').value,
-        var hospitalName = document.getElementById('#hospitalName').value,
-        var secretaryName = document.getElementById('#secretaryName').value,
-        var doctorWebSite = document.getElementById('#doctorWebSite').value,
+        var  = document.getElementById('#name').value;
+        var email = document.getElementById('#email').value;
+        var doctorSpecialty = document.getElementById('#doctorSpecialty').value;
+        var dayOfWeek = document.getElementById('#dayOfWeek').value;
+        var hospitalName = document.getElementById('#hospitalName').value;
+        var secretaryName = document.getElementById('#secretaryName').value;
+        var doctorWebSite = document.getElementById('#doctorWebSite').value;
 
-        console.log('taking in form data ' + name + ' ' + email)
+        console.log('taking in form data ' + name + ' ' + email);
       };
       var renderDoctor = function(e){
         $('#middle').text(name + ' ' + email + 'Your appointment reminder');
