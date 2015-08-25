@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Original Pranksters Forms</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="css/prankforms.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+    <h1>Prank My Friend</h1>
+        <button id="home">Home</button>
+        <button id="about">About Us</button>
+        <button id="pranks">View Pranks</button>
+        <button id="auth">Log In</button>
+    </header>
+
+    <div id="prank message">
+  <h1>Please complete the form below to create your prank message.</h1>
+  <hr>
+  <form>
+
+    <div class="form-entry">
+      <label for="name">person's name</label>
+      <input id="name" type="text" placeholder="Enter a name">
+    </div>
+    <div class="form-entry">
+      <label for="product">product name</label>
+      <input id="product" type="text" placeholder="Enter a product">
+    </div>
+    <div class="form-entry">
+      <label for="quantity">quantity</label>
+      <input id="quantity" type="text" placeholder="Enter quantity">
+    </div>
+    <div class="form-entry">
+      <label for="date">date</label>
+      <input id="date" type="text" placeholder="Enter date">
+    </div>
+
+  </form>
+  <button id="btn-click" type="submit">Generate Prank!</button>
+  <hr>
+</div>
+
+
+    <main>
+      <section id="left"></section>
+      <section id="middle"></section>
+      <section id="right"></section>
+    </main>
+
+      <script src="js/prankforms.js"></script>
+
+    <footer>
+      <h6>&copy 2015 Will Kitchell, Anson Menzie, David Sheffield and Steven Washington</h6>
+    </footer>
+
+  </body>
+</html>
