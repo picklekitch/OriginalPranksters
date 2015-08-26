@@ -29,14 +29,14 @@ var calculateCost = function(e){
 };
 
 var renderFood = function(e){
-  $('#middle').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
-  $('#middle2').text('Order Number: 338231004 will be delivered to ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
-  $('#middle3').text('Order Receipt:');
-  $('#middle4').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
-  $('#middle5').text('Delivery Fee: $3.00');
-  $('#middle6').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
-  $('#middle7').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
-  $('#middle8').text('Additional Delivery Notes: ' + prankster.note);
+  $('#render').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
+  $('#render2').text('Order Number: 338231004 will be delivered to ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
+  $('#render3').text('Order Receipt:');
+  $('#render4').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
+  $('#render5').text('Delivery Fee: $3.00');
+  $('#render6').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
+  $('#render7').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
+  $('#render8').text('Additional Delivery Notes: ' + prankster.note);
   console.log('writing the middle section');
 };
 
