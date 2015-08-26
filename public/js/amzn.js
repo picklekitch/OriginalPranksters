@@ -39,4 +39,3 @@ $('#amznprank').click(function(e){
     calcAmznCost(x);
     renderAmzn();
 });
-
