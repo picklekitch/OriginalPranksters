@@ -28,7 +28,8 @@ var renderAmzn = function(e){
     console.log('sending Amazon ship notice');
   };
 
-$('amznprank').on('click', function(e){
+$('#amznprank').click(function(e){
+    console.log('clicked');
     var x = createAmzn();
     calcAmznCost(x);
     renderAmzn();
