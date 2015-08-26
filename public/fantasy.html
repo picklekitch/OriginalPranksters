@@ -9,7 +9,7 @@
     <form>
       <ul>
         <li>Name of person receiving prank: <input type = "text", id = "name", value = "pete carroll" required></li>
-        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "email@email.email" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "name@email.com" required></li>
         <li>
           <select name = "Fantasy Sport", id = "item" required>
             <option>Choose a fantasy sport for your friend...</option>
@@ -21,14 +21,18 @@
             <option>Nascar Racing</option>
           </select>
         </li>
-        <li>What isthe name of the Fantasy League?: <input type = "text", id = "leagueName", placeholder = "ie) Super Stat Fighters" required></li>
-        <li>What is the team name?: <input type = "text", id = "teamName", placeholder = "ie) Jimmy Graham Crackers" required></li>
+        <li>What is the name of the Fantasy League?: <input type = "text", id = "leagueName", placeholder = "ie) Super Stat Fighters" required></li>
+        <li>What is their team name?: <input type = "text", id = "teamName", placeholder = "ie) Jimmy Graham Crackers" required></li>
         <li>Who got injured? <input type="text", id="playerName", placeholder = "ie) Joe Montana" required></li>
       </ul>
       <button id = "fantasyprank" type = "button">Generate Prank</button>
     </form>
 
-    <script type = "text/javascript" src = "js/fantasy.js"></script>
+      <div id = "middle"> </div>
+      <div id = "middle2"> </div>
+      <div id = "middle3"> </div>
+
+      <script type = "text/javascript" src = "js/fantasy.js"></script>
 
   </body>
 </html>
