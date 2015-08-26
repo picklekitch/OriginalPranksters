@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Prank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <form>
+      <ul>
+        <li>Name of person receiving prank: <input type = "text", id = "name", value = "john doe" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "email@email.email" required></li>
+        <li>
+          <select name = "Amazon Item", id = "item" required>
+            <option value = "0">Choose an Amazon item for your friend...</option>
+            <option value = "985">55 Gallon Drum of Lube</option>
+            <option value = "90">UFO Detector</option>
+            <option value = "20">5 Tampon Flasks</option>
+            <option value = "15">Can of Unicorn Meat</option>
+            <option value = "11">Box of 30 Dude Wipes</option>
+            <option value = "9">Gangsta Rap Coloring Book</option>
+            <option value = "7">Runny Nose Shower Gel Dispenser</option>
+            <option value = "5">Weener Cleaner Soap</option>
+          </select>
+        </li>
+        <li>How Many of Item?: <input type = "number", id = "itemHowMany", value = "5" required></li>
+        <li>Address: <input type = "text", id = "address", value = "511 Boren Ave N" required></li>
+        <li>City: <input type="text", id="city", value = "Seattle" required></li>
+        <li>State: <input type="text", id="state", value = "WA" required></li>
+        <li>Zip: <input type="number", id="zip", value = "98109" required></li>
+      </ul>
+      <button id = "amznprank", type = "button">Submit Here</button>
+    </form>
+
+    <script type = "text/javascript" src = "js/amzn.js"></script>
+
+  </body>
+</html>
