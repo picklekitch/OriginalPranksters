@@ -1,29 +1,34 @@
-// var pform = require('./prankforms.js');
+// Prank Amazon Order
+
+var prankster = {name: '', email: '', item: '', itemPrice: '', howMany: '', address: '', city: '', state: '', zip: ''};
+// var name, email, item, itemNum, howMany, address, city, state, zip;
 
 var createAmzn = function(e){
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var item = $('#item option:selected').val();
-    console.log(item);
-    var howMany = $('#itemHowMany').val();
-    console.log(howMany);
-    var address = document.getElementById('address').value;
-    var city = document.getElementById('city').value;
-    var state = document.getElementById('state').value;
-    var zip = document.getElementById('zip').value;
-    console.log('taking in form data ' + name + ' ' + email);
-    return {i: item, q: howMany};
+    prankster.name = document.getElementById('name').value;
+    prankster.email = document.getElementById('email').value;
+    prankster.item = $('#item option:selected')[0].label;
+    console.log('this is the console dir')
+    console.dir(prankster.item);
+    prankster.itemPrice = $('#item option:selected').val();
+    console.log(prankster.item);
+    prankster.howMany = $('#itemHowMany').val();
+    console.log(prankster.howMany);
+    prankster.address = document.getElementById('address').value;
+    prankster.city = document.getElementById('city').value;
+    prankster.state = document.getElementById('state').value;
+    prankster.zip = document.getElementById('zip').value;
+    console.log('taking in form data ' + prankster.name + ' ' + prankster.email);
   };
 
 var calcAmznCost = function(e){
-    var total = parseInt((e.i * e.q) * 1.085);
+    var total = parseInt((prankster.itemPrice * prankster.howMany) * 1.085);
     console.log('calculating a number');
     console.log(total);
   };
 
 var renderAmzn = function(e){
-    $('#middle').text(createAmzn.name + ' ' + createAmzn.email + 'Your Amazon.com order of  ' + createAmzn.howMany + createAmzn.item + ' has shipped!');
-    $('#middle2').text('Hello ' + createAmzn.name + 'Order #002-0025687-7655223 will be shipped to ' + createAmzn.address + createAmzn.city + ', ' + createAmzn.state + ' ' + createAmzn.zip);
+    $('#middle').text(prankster.name + '  ' + prankster.email + ' Your Amazon.com order of  ' + prankster.howMany + '  ' + prankster.item + ' has shipped!');
+    $('#middle2').text('Hello ' + prankster.name + 'Order #002-0025687-7655223 will be shipped to ' + prankster.address + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
     $('#middle3').text('Return or replace your items in Your Orders.');
     console.log('sending Amazon ship notice');
   };
