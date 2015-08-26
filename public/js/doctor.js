@@ -13,9 +13,11 @@ var prankDoctor = {name: '', email: '', doctorSpecialty: '', dayOfWeek: '', hosp
 };
 
   var renderDoctor = function(e){
-    $('#middle').text(prankDoctor.name + ' ' + prankDoctor.email + 'Your appointment reminder');
-    $('#middle2').text('Dear ' + prankDoctor.name + ', This is your ' + prankDoctor.doctorSpecialty + ' office confirming your appointment for this ' + prankDoctor.dayOfWeek + '.  Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + prankDoctor.hospitalName + ' we value you as a patient and look forward to providing your health care needs.  Sincerely, ' + prankDoctor.secretaryName + ', patient services coordinator');
-    $('#middle3').text('If you are unable to make it to your appointment please contact us at ' + prankDoctor.doctorWebSite);
+    $('#middle1').text('This is an appointment reminder for ' + prankDoctor.name + '. (' + prankDoctor.email + ')');
+    $('#middle2').text('Dear ' + prankDoctor.name + ',');
+    $('#middle3').text('This is your ' + prankDoctor.doctorSpecialty + ' office confirming your appointment for this ' + prankDoctor.dayOfWeek + '.  Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + prankDoctor.hospitalName + ' we value you as a patient and look forward to providing your health care needs.  Sincerely,');
+    $('#middle4').text(prankDoctor.secretaryName + ', patient services coordinator');
+    $('#middle5').text('If you are unable to make it to your appointment please contact us at ' + prankDoctor.doctorWebSite);
       console.log('writing the middle section');
   };
 
