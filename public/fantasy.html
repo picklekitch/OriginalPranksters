@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fantasy Sports Prank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="css/app.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div id="nav">
+      <button id="home"><a href="index.html"> Home</a></button>
+      <button id="about"><a href="aboutus.html">About Us</a></button>
+      <button id="auth"><a href="login.html">Log In</a></button>
+    </div>
+
+    <header>
+      <p>Fantasy Sports Prank</p>
+    </header>
+      <hr>
+        <p>please complete the form below to create your prank message.</p>
+      </hr>
+
+    <form>
+      <ul>
+        <li>Name of person receiving prank: <input type = "text", id = "name", value = "pete carroll" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "name@email.com" required></li>
+        <li>
+          <select name = "Fantasy Sport", id = "item" required>
+            <option>Choose a fantasy sport for your friend...</option>
+            <option>NFL Football</option>
+            <option>MLB Baseball</option>
+            <option>NBA Basketball</option>
+            <option>NHL Hockey</option>
+            <option>PGA Golf</option>
+            <option>Nascar Racing</option>
+          </select>
+        </li>
+        <li>What is the name of the Fantasy League?: <input type = "text", id = "leagueName", placeholder = "ie) Super Stat Fighters" required></li>
+        <li>What is their team name?: <input type = "text", id = "teamName", placeholder = "ie) Jimmy Graham Crackers" required></li>
+        <li>Who got injured? <input type="text", id="playerName", placeholder = "ie) Joe Montana" required></li>
+      </ul>
+      <button id = "fantasyprank" type = "button">Generate Prank</button>
+    </form>
+  <hr>
+      <div id = "middle"> </div>
+      <div id = "middle2"> </div>
+      <div id = "middle3"> </div>
+  </hr>
+
+    <footer>
+      <h6>&copy 2015 Will Kitchell, Anson Menzie, David Sheffield and Steven Washington</h6>
+    </footer>
+
+    <script type = "text/javascript" src = "js/fantasy.js"></script>
+
+  </body>
+</html>

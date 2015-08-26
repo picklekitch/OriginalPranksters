@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Prank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="css/app.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+<body>
+  <form action="food.js">
+    <ul>
+      <li>Name of person receiving prank: <input type = "text", id = "name", placeholder = "Enter name here" required></li>
+      <li>Email address of person receiving prank: <input type = "text", id = "email", placeholder = "Enter email here" required></li>
+      <li>
+        <select name = "Pizza Size", id = "size" required>
+          <option value = "0">Choose a pizza size...</option>
+          <option value = "12">Small</option>
+          <option value = "16">Medium</option>
+          <option value = "20">Large</option>
+          <option value = "24">X-Large</option>
+        </select>
+      </li>
+      <li>Type of Pizza: <input type = "text", id = "pizzaType", placeholder = "Type of Pizza (cheese, pepperoni...)" required></li>
+      <li>Number of Pizzas: <input type = "number", id = "pizzasOrdered", placeholder = "Number of pizzas" required></li>
+      <li>Address: <input type = "text", id = "address", placeholder = "Enter address here" required></li>
+      <li>City: <input type="text", id="city", placeholder = "City" required></li>
+      <li>State: <input type="text", id="state", placeholder = "State" required></li>
+      <li>Zip: <input type="number", id="zip", placeholder = "Zip" required></li>
+      <li>Delivery note: <input type = "text" id="optional", placeholder = "Additional delivery notes here"></li>
+    </ul>
+    <input type = "button", value = "Render Delivery Prank" id = "pizzaprank">
+  </form>
+
+  <div id="render"></div>
+  <div id="render2"></div>
+  <div id="render3"></div>
+  <div id="render4"></div>
+  <div id="render5"></div>
+  <div id="render6"></div>
+  <div id="render7"></div>
+  <div id="render8"></div>
+
+ <footer>
+    <h6>&copy 2015 Will Kitchell, Anson Menzie, David Sheffield and Steven Washington</h6>
+  </footer>
+
+  <script type = "text/javascript" src = "js/food.js"></script>
+
+</body>
+</html>
