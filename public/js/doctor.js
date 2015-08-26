@@ -1,24 +1,29 @@
+var prankDoctor = {name: '', email: '', doctorSpecialty: '', dayOfWeek: '', hospitalName: '', secretaryName: '', doctorWebSite: ''};
 
  var createDoctor = function(e){
-  var name= document.getElementById('#name').value;
-  var email = document.getElementById('#email').value;
-  var doctorSpecialty = document.getElementById('#doctorSpecialty').value;
-  var dayOfWeek = document.getElementById('#dayOfWeek').value;
-  var hospitalName = document.getElementById('#hospitalName').value;
-  var secretaryName = document.getElementById('#secretaryName').value;
-  var doctorWebSite = document.getElementById('#doctorWebSite').value;
+  prankDoctor.name = document.getElementById('name').value;
+  prankDoctor.email = document.getElementById('email').value;
+  prankDoctor.doctorSpecialty = document.getElementById('doctorSpecialty').value;
+  prankDoctor.dayOfWeek = document.getElementById('dayOfWeek').value;
+  prankDoctor.hospitalName = document.getElementById('hospitalName').value;
+  prankDoctor.secretaryName = document.getElementById('secretaryName').value;
+  prankDoctor.doctorWebSite = document.getElementById('doctorWebSite').value;
 
-  console.log('taking in form data ' + name + ' ' + email);
-      };
+  console.log('taking in form data ' + prankDoctor.name + ' ' + prankDoctor.email);
+};
+
   var renderDoctor = function(e){
-    $('#middle').text(createDoctor.name + ' ' + createDoctor.email + 'Your appointment reminder');
-    $('#middle2').text('Dear ' + createDoctor.name + ', This is your ' + createDoctor.doctorSpecialty + ' office confirming your appointment for this ' + createDoctor.dayOfWeek + '.  Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + createDoctor.hospitalName + ' we value you as a patient and look forward to providing your health care needs.  Sincerely, ' + createDoctor.secretaryName + ', patient services coordinator');
-    $('#middle3').text('If you are unable to make it to your appointment please contact us here.' + createDoctor.doctorWebSite);
-    console.log('writing the middle section');
+    $('#middle').text(prankDoctor.name + ' ' + prankDoctor.email + 'Your appointment reminder');
+    $('#middle2').text('Dear ' + prankDoctor.name + ', This is your ' + prankDoctor.doctorSpecialty + ' office confirming your appointment for this ' + prankDoctor.dayOfWeek + '.  Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + prankDoctor.hospitalName + ' we value you as a patient and look forward to providing your health care needs.  Sincerely, ' + prankDoctor.secretaryName + ', patient services coordinator');
+    $('#middle3').text('If you are unable to make it to your appointment please contact us at ' + prankDoctor.doctorWebSite);
+      console.log('writing the middle section');
   };
 
+
   $('#doctorprank').on('click', function(e){
-  var x = createDoctor();
+  console.log("hello");
+  createDoctor();
   renderDoctor();
 });
+
 
