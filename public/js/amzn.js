@@ -21,9 +21,9 @@ var calcAmznCost = function(e){
   };
 
 var renderAmzn = function(e){
-    $('#middle').text(prank.name + '  ' + prank.email + ' Your Amazon.com order of  ' + prank.howMany + '  ' + prank.item + ' has shipped!');
-    $('#middle2').text('Hello ' + prank.name + 'Order #002-0025687-7655223 will be shipped to ' + prank.address + prank.city + ', ' + prank.state + ' ' + prank.zip);
-    $('#middle3').text('Return or replace your items in Your Orders.');
+    $('#render').text(prank.name + '  ' + prank.email + ' Your Amazon.com order of  ' + prank.howMany + '  ' + prank.item + ' has shipped!');
+    $('#render2').text('Hello ' + prank.name + 'Order #002-0025687-7655223 will be shipped to ' + prank.address + prank.city + ', ' + prank.state + ' ' + prank.zip);
+    $('#render3').text('Return or replace your items in Your Orders.');
     console.log('renderAmzn ship notice is working');
   };
 

@@ -17,9 +17,9 @@ var createFantasy = function(e){
     };
 
 var renderFantasy = function(e){
-    $('#middle').text(prank.name + ' ' + prank.email + '   Fantasy Football  ' + prank.leagueName + ' - injury update!');
-    $('#middle2').text('Hello ' + prank.name + ' ' + prank.playerName + ' in your league ' + prank.leagueName + ' is out for the year with a confirmed torn ACL. ' + prank.playerName + ' will require season-ending surgery. We suggest dropping this player ASAP!!');
-    $('#middle3').text('--Fantasy Football Commissioner');
+    $('#render').text(prank.name + ' ' + prank.email + '   Fantasy Football  ' + prank.leagueName + ' - injury update!');
+    $('#render2').text('Hello ' + prank.name + ' ' + prank.playerName + ' in your league ' + prank.leagueName + ' is out for the year with a confirmed torn ACL. ' + prank.playerName + ' will require season-ending surgery. We suggest dropping this player ASAP!!');
+    $('#render3').text('--Fantasy Football Commissioner');
     console.log('renderFantasy writing prank email is working');
     };
 
