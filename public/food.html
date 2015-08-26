@@ -7,8 +7,8 @@
 <body>
   <form action="food.js">
     <ul>
-      <li>Name of person receiving prank: <input type = "text", id = "name", value = "will" required></li>
-      <li>Email address of person receiving prank: <input type = "text", id = "email", value = "email@email.email" required></li>
+      <li>Name of person receiving prank: <input type = "text", id = "name", placeholder = "Enter name here" required></li>
+      <li>Email address of person receiving prank: <input type = "text", id = "email", placeholder = "Enter email here" required></li>
       <li>
         <select name = "Pizza Size", id = "size" required>
           <option value = "0">Choose a pizza size...</option>
@@ -18,16 +18,24 @@
           <option value = "24">X-Large</option>
         </select>
       </li>
-      <li>Type of Pizza: <input type = "text", id = "pizzaType", value = "pizzaType" required></li>
-      <li>Number of Pizzas: <input type = "number", id = "pizzasOrdered", value = "22" required></li>
-      <li>Address: <input type = "text", id = "address", value = "233 36th Ave E" required></li>
-      <li>City: <input type="text", id="city", value = "Seattle" required></li>
-      <li>State: <input type="text", id="state", value = "WA" required></li>
-      <li>Zip: <input type="number", id="zip", value = "98112" required></li>
-      <li>Delivery note: <input type = "text" id="optional", value = "notes"></li>
+      <li>Type of Pizza: <input type = "text", id = "pizzaType", placeholder = "Type of Pizza (cheese, pepperoni...)" required></li>
+      <li>Number of Pizzas: <input type = "number", id = "pizzasOrdered", placeholder = "Number of pizzas" required></li>
+      <li>Address: <input type = "text", id = "address", placeholder = "Enter address here" required></li>
+      <li>City: <input type="text", id="city", placeholder = "City" required></li>
+      <li>State: <input type="text", id="state", placeholder = "State" required></li>
+      <li>Zip: <input type="number", id="zip", placeholder = "Zip" required></li>
+      <li>Delivery note: <input type = "text" id="optional", placeholder = "Additional delivery notes here"></li>
     </ul>
     <input type = "button", value = "Render Delivery Prank" id = "pizzaprank">
   </form>
+  <div id="render"></div>
+  <div id="render2"></div>
+  <div id="render3"></div>
+  <div id="render4"></div>
+  <div id="render5"></div>
+  <div id="render6"></div>
+  <div id="render7"></div>
+  <div id="render8"></div>
   <script type = "text/javascript" src = "js/food.js"></script>
 </body>
 </html>
