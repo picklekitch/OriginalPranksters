@@ -1,6 +1,6 @@
 // Prank Amazon Order
 
-var prank = {name: '', email: '', item: '', itemPrice: '', howMany: '', address: '', city: '', state: '', zip: '', date: '', total: '', tax: ''};
+var prank = {name: '', email: '', item: '', itemPrice: '', howMany: '', address: '', city: '', state: '', zip: '', date: '', moment: '', total: '', tax: ''};
 
 var createAmzn = function(e){
     prank.name = document.getElementById('name').value;
@@ -34,7 +34,7 @@ var renderAmzn = function(e){
     $('#render8').text(' Details');
     $('#render9').text(' Order #002-0025687-7655223');
     $('#render10').text(' Expected Delivery Date:                             Shipped To:');
-    $('#render11').text('  ' + prank.date + '                                  ' + prank.address);
+    $('#render11').text('  ' + moment(prank.date).format('dddd, MMMM DD, YYYY') + '                                  ' + prank.address);
     $('#render12').text('                                                       ' + prank.city + ', ' + prank.state + ' ' + prank.zip);
     $('#render13').text(' Total Before Tax: $' + (prank.itemPrice * prank.howMany).toFixed(2));
     $('#render14').text(' Tax Collected: $' + prank.tax);
