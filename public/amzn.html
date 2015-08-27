@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amazon Prank</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="css/app.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div id="nav">
+      <button id="home"><a href="index.html">Home</a></button>
+      <button id="about"><a href="aboutus.html">About Us</a></button>
+      <button id="auth"><a href="login.html">Log In</a></button>
+    </div>
+    <header>
+      <p>Amazon Order Prank</p>
+    </header>
+    <p>Please complete the form below to create your prank message.</p>
+    <form>
+      <ul>
+        <li>Name of person receiving prank: <input type = "text", id = "name", placeholder = "John Doe" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", placeholder = "label@email.com" required></li>
+        <li>
+          <select name = "Amazon Item", id = "item" required>
+            <option value = "0">Choose an Amazon item for your friend...</option>
+            <option value = "1275">55 Gallon Drum(s) of Lube</option>
+            <option value = "89.58">UFO Detector(s)</option>
+            <option value = "19.98">5 Tampon Flasks</option>
+            <option value = "14.41">Can(s) of Unicorn Meat</option>
+            <option value = "10.99">Box(es) of 30 Dude Wipes</option>
+            <option value = "8.95">Gangsta Rap Coloring Book(s)</option>
+            <option value = "6.75">Runny Nose Shower Gel Dispenser(s)</option>
+            <option value = "5.07">Weener Kleener Soap(s)</option>
+          </select>
+        </li>
+        <li>How Many of Item?: <input type = "number", id = "itemHowMany", placeholder = "3" required></li>
+        <li>Address: <input type = "text", id = "address", placeholder = "511 Boren Ave N" required></li>
+        <li>City: <input type="text", id="city", placeholder = "Seattle" required></li>
+        <li>State: <input type="text", id="state", placeholder = "WA" required></li>
+        <li>Zip: <input type="number", id="zip", placeholder = "98109" required></li>
+        <li>Date: <input type="date", id="date", placeholder = "08/31/2015" required></li>
+      </ul>
+      <button id = "amznprank" type = "button">Generate Prank</button>
+    </form>
+
+    <div id = "render"> </div>
+    <div id = "render1"> </div>
+    <div id = "render2"> </div>
+    <div id = "render3"> </div>
+    <div id = "render4"> </div>
+    <div id = "render5"> </div>
+    <div id = "render6"> </div>
+    <div id = "render7"> </div>
+    <div id = "render8"> </div>
+    <div id = "render9"> </div>
+    <div id = "render10"> </div>
+    <div id = "render11"> </div>
+    <div id = "render12"> </div>
+    <div id = "render13"> </div>
+    <div id = "render14"> </div>
+    <div id = "render15"> </div>
+    <div id = "render16"> </div>
+    <div id = "render17"> </div>
+    <div id = "render18"> </div>
+
+    <script type = "text/javascript" src = "js/amzn.js"></script>
+
+  </body>
+</html>

@@ -1,26 +1,49 @@
-var pform = require('./prankforms.js');
+var prankster = {name: '', email: '', pizzasOrdered: '', ptype: '', address: '', city: '', state: '', zip: '', note: '', size: '', sizeName: ''};
 
-$(function(){
-  var foodModule = function(){
-      var createFood = function(e){
-        var name = document.getElementById('#name').value,
-        var email = document.getElementById('#email').value,
-        var item = document.getElementById('#item').value,
-        var address = document.getElementById('#address').value,
-        var city = document.getElementById('#city').value,
-        var state = document.getElementById('#state').value,
-        var zip = document.getElementById('#zip').value,
-        console.log('taking in form data ' + name + ' ' + email)
-      };
-      var renderFood = function(){
-        $('#middle').text(name + ' ' + email + 'Your Amazon.com order of  ' + item + ' has shipped!');
-        $('#middle2').text('Hello ' + name + 'Order #002-0025687-7655223 will be shipped to ' + address + city + ', ' + state + ' ' + zip)
-        $('#middle3').text('Return or replace your items in Your Orders.')
-        console.log('writing the middle section');
-      };
-      $('#btn-click').on('click', createFood);
-      $('#btn-click').on('click', renderFood)
-  };
-})();
+// var name, email, pizzasOrdered, ptype, address, city, state, zip, note, size;
 
-exports.foodModule = foodModule;
+var createFood = function(e){
+  console.log(prankster.pizzasOrdered);
+  prankster.name = document.getElementById('name').value;
+  prankster.email = document.getElementById('email').value;
+  prankster.pizzasOrdered = $('#pizzasOrdered').val();
+  prankster.ptype = document.getElementById('pizzaType').value;
+  prankster.address = document.getElementById('address').value;
+  prankster.city = document.getElementById('city').value;
+  prankster.state = document.getElementById('state').value;
+  prankster.zip = document.getElementById('zip').value;
+  prankster.note = document.getElementById('optional').value;
+  prankster.size = $('#size option:selected').val();
+  prankster.sizeName = $('#size option:selected')[0].label;
+  console.log(prankster.size);
+  console.log('taking in form data ' + prankster.name + ' ' + prankster.email);
+  return {q: prankster.pizzasOrdered, s: prankster.size};
+};
+
+var calculateCost = function(e){
+  var total = parseInt(((e.s * e.q)+3)*1.085);
+  var tax = (total - ((e.s * e.q)+3));
+  console.log(tax);
+  console.log('this is calculating a number');
+  console.log(total);
+};
+
+var renderFood = function(e){
+  $('#render').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
+  $('#render2').text('Order Number: 338231004 will be delivered to ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
+  $('#render3').text('Order Receipt:');
+  $('#render4').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
+  $('#render5').text('Delivery Fee: $3.00');
+  $('#render6').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
+  $('#render7').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
+  $('#render8').text('Additional Delivery Notes: ' + prankster.note);
+  console.log('writing the middle section');
+};
+
+$('#pizzaprank').on('click', function(e){
+  var x = createFood();
+  calculateCost(x);
+  renderFood();
+});
+
+
