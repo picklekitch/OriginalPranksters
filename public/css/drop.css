@@ -1,0 +1,14 @@
+span{
+  -webkit-transition:all 10s ease-in;
+  transition:all 10s ease-in;
+  display:inline-block;
+}
+.fallen{
+  -webkit-transform:translate(0,1000px);
+  transform:translate(0,1000px);
+}
+
+}
+html{
+  background:#082940;
+}

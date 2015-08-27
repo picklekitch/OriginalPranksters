@@ -1,15 +1,14 @@
-
-
 nav {
   background-color: orange;
   border: 1px solid #dedede;
-  border-radius: 7px;
+  border-radius: 15px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   color: #888;
   display: block;
   margin: 8px 22px 8px 22px;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
+  font-family: 'Special Elite', cursive;
 }
 
 nav ul {
@@ -106,18 +105,126 @@ nav > ul > li:hover > div {
 body {
   background-color: #EBE8E4;
   color: #222;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-align: center;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 header{
-    font-size: 40px;
-    font-weight:bold;
+    font-size: 80px;
     color: green;
+    background-color: #EBE8E4;
+    font-family: 'Special Elite', cursive;
+    padding: 0px 5px 0px 5px;
 }
 
-#upper {
-    background-color:white;
+main {
+    font-family: 'Special Elite', cursive;
+}
+
+#top {
+  background-color: white;
+  padding: 30px 10px 30px 10px;
+  margin: 50px 40px 20px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}  
+
+#firstbox {
+  float:left;
+  width: 42.5%;
+  background-color: #3CABC7;
+  margin: 3%;
+  border-radius: 30px;
+}
+
+#secondbox {
+  float: right;
+  width: 42.5%;
+  background-color: #3CABC7;
+  margin: 3%;
+  border-radius: 30px;
+}
+
+#thirdbox {
+  float: left;
+  width: 42.5%;
+  background-color: #3CABC7;
+  margin: 3%;
+  border-radius: 30px;
+}
+
+#fourthbox {
+  float: right;
+  width: 42.5%;
+  background-color: #3CABC7;
+  margin: 3%;
+  border-radius: 30px;
+}
+
+#amzn {
+  padding: 50px 10px 50px 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px dotted black;
+  border-radius: 10px;
+
+
+}
+
+#doctor {
+  padding: 50px 10px 50px 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px dotted black;
+  border-radius: 10px;
+
+}
+
+#fantasy {
+  padding: 50px 10px 50px 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px dotted black;
+  border-radius: 10px;
+}
+
+#pizza {
+  padding: 50px 10px 50px 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px dotted black;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  color: black;
+  margin: 25%;
+  font-size: 10px;
+  font-weight: bold;
+  clear:both;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+a {
+  color: black;
 }
