@@ -1,0 +1,79 @@
+
+
+#foodrendercontainer {
+  border: 3px solid #665544;
+  background-color: #FFFFFF;
+  width: 598px;
+  height: 650px;
+  display: none;
+}
+/*
+#foodrender {
+
+}
+
+#foodrender2 {
+
+}
+
+#foodrender3 {
+
+}
+
+#foodrender4 {
+
+}
+
+#foodrender5 {
+
+}
+
+#foodrender6 {
+
+}
+
+#foodrender7 {
+
+}
+
+#foodrender8 {
+
+}
+
+#foodrender9 {
+
+}
+
+#foodrender10 {
+
+}
+
+#foodrender11 {
+
+}*/
+
+#foodordercontainer {
+  width: 440px;
+  height: 400px;
+  top: 200px;
+  left: 0px;
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+
+#foodphoto1 {
+
+}
+
+#foodphoto2 {
+  float: right;
+  padding: 2px;
+}
+
+#foodphoto3 {
+
+}
+
+#foodphoto4 {
+
+}
