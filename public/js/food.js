@@ -30,13 +30,16 @@ var calculateCost = function(e){
 
 var renderFood = function(e){
   $('#render').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
-  $('#render2').text('Order Number: 338231004 will be delivered to ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
-  $('#render3').text('Order Receipt:');
-  $('#render4').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
-  $('#render5').text('Delivery Fee: $3.00');
-  $('#render6').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
-  $('#render7').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
-  $('#render8').text('Additional Delivery Notes: ' + prankster.note);
+  $('#render2').text('Please find below the details of your order:')
+  $('#render3').text('Online Order Number: 338231004');
+  $('#render4').text('Deliver to: ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
+  $('#render5').text('Estimated Delivery Time: 20-30 minutes');
+  $('#render6').text('Order Receipt:');
+  $('#render7').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
+  $('#render8').text('Delivery Fee: $3.00');
+  $('#render9').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
+  $('#render10').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
+  $('#render11').text('Additional Delivery Notes: ' + prankster.note);
   console.log('writing the middle section');
 };
 
