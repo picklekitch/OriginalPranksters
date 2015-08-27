@@ -1,15 +1,14 @@
 
-
 nav {
   background-color: orange;
   border: 1px solid #dedede;
-  border-radius: 7px;
+  border-radius: 15px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   color: #888;
   display: block;
   margin: 8px 22px 8px 22px;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
 }
 
 nav ul {
@@ -110,14 +109,91 @@ body {
   font-weight: 300;
   font-size: 15px;
   text-align: center;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 header{
     font-size: 40px;
     font-weight:bold;
     color: green;
+    background-color: #EBE8E4;
 }
 
 #upper {
-    background-color:white;
+    background-color:#EBE8E4;
 }
+
+#main {
+  background-color: #EBE8E4;
+}
+
+#top {
+  background-color: white;
+  padding: 30px 10px 30px 10px;
+  margin: 50px 40px 20px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#firstcolumn {
+  float:left;
+  width: 42.5%;
+  background-color: white;
+  margin: 3%;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  border-radius: 30px;
+}
+
+#secondcolumn {
+  float: right;
+  width: 42.5%;
+  background-color: white;
+  margin: 3%;
+  border-radius: 30px;
+
+}
+#amzn {
+  padding: 50px 10px 50px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+#doctor {
+  padding: 50px 10px 50px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#fantasy {
+  padding: 50px 10px 50px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#pizza {
+  padding: 50px 10px 50px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  color: black;
+  margin: 25%;
+  font-size: 10px;
+  font-weight: bold;
+  clear:both;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
