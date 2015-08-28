@@ -1,0 +1,70 @@
+/* This is the CSS Styling specific to the Amazon Prank */
+
+#amzncontainer {
+  font-family: Arial;
+  background-color: #FFFFFF;
+  border: 3px solid black;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 60px; }
+
+#amzncontainer2 {
+  margin-left: 60px;
+  text-align: left; }
+
+#amznrender1 {
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: bold; }
+
+#amznrender6, #amznrender8 {
+  font-size: 23px;
+  line-height: 29px;
+  color: #C45500; }
+
+#amznrender11, #amznrender12, #amznrender15 {
+  font-weight: bold; }
+
+#amzntrack {
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 3px;
+  height: 29px;
+  width: 155px;
+  margin-bottom: 10px;
+  background-color: #F0C14B; }
+
+#amznorder {
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 3px;
+  height: 29px;
+  width: 155px;
+  margin-bottom: 10px; }
+
+#amznalso {
+  text-align: center;
+  margin-left: 200px; }
+
+#amznpapprove {
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 3px;
+  height: 29px;
+  width: 155px;
+  margin-bottom: 10px;
+  margin-left: 390px;
+  background-color: green;
+  text-align: center; }
+
+#amznpdecline {
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 3px;
+  height: 29px;
+  width: 155px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-align: center; }
+
