@@ -15,9 +15,12 @@ var prankDoctor = {name: '', email: '', doctorSpecialty: '', dayOfWeek: '', hosp
   var renderDoctor = function(e){
     $('#middle1').text('This is an appointment reminder for ' + prankDoctor.name + '. (' + prankDoctor.email + ')');
     $('#middle2').text('Dear ' + prankDoctor.name + ',');
-    $('#middle3').text('This is your ' + prankDoctor.doctorSpecialty + ' office confirming your appointment for this ' + prankDoctor.dayOfWeek + '.  Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + prankDoctor.hospitalName + ' we value you as a patient and look forward to providing your health care needs.  Sincerely,');
-    $('#middle4').text(prankDoctor.secretaryName + ', patient services coordinator');
-    $('#middle5').text('If you are unable to make it to your appointment please contact us at ' + prankDoctor.doctorWebSite);
+    $('#middle3').text('This is your ' + prankDoctor.doctorSpecialty + ' office confirming your appointment for this ' + prankDoctor.dayOfWeek + '.');
+    $('#middle4').text(' Please arrive fifteen minutes early to fill out the patient registration paperwork.  Here at ' + prankDoctor.hospitalName);
+     $('#middle5').text(' we value you as a patient and look forward to providing your health care needs.  Sincerely,');
+    $('#middle6').text(prankDoctor.secretaryName + ', patient services coordinator');
+    $('#middle7').text('If you are unable to make it to your appointment please contact us by clicking the link to our website. ');
+    $('#middle8').text(prankDoctor.doctorWebSite);
       console.log('writing the middle section');
   };
 
