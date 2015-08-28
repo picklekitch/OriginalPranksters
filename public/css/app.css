@@ -134,7 +134,7 @@ main {
   font-weight: bold;
   text-align: center;
   font-family: 'Special Elite', cursive;
-}  
+}
 
 #firstbox {
   float:left;
@@ -227,4 +227,17 @@ footer {
 
 a {
   color: black;
+}
+
+#will, #anson, #david, #steven {
+  font-size: 40px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px
+}
+
+#will_about, #anson_about, #david_about, #steven_about {
+  font-size: 20px;
+  padding: 0px 60px 10px 60px;
+  margin: 0px 250px 40px 250px;
+  font-size: 15px;
 }
