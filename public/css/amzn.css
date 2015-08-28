@@ -6,7 +6,8 @@
   border: 3px solid black;
   width: 90%;
   margin-top: 20px;
-  margin-left: 60px; }
+  margin-left: 60px;
+  display: none; }
 
 #amzncontainer2 {
   margin-left: 60px;

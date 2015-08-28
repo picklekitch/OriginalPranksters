@@ -49,4 +49,5 @@ $('#amznprank').click(function(e){
     var x = createAmzn();
     calcAmznCost(x);
     renderAmzn();
+    $('#amzncontainer').toggle();
 });
