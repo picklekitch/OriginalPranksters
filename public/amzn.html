@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <link href="css/app.css" type="text/css" rel="stylesheet"/>
+    <link href="css/amzn.css" type="text/css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Special+Elite|Gochi+Hand|Chelsea+Market|Kite+One|Happy+Monkey|Indie+Flower|Bevan' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -33,8 +34,8 @@
     <p>Please complete the form below to create your prank message.</p>
     <form>
       <ul id="test">
-        <li>Name of person receiving prank: <input type = "text", id = "name", placeholder = "John Doe" required></li>
-        <li>Email address of person receiving prank: <input type = "text", id = "email", placeholder = "label@email.com" required></li>
+        <li>Name of person receiving prank: <input type = "text", id = "name", value = "John Doe" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "label@email.com" required></li>
         <li>
           <select name = "Amazon Item", id = "item" required>
             <option value = "0">Choose an Amazon item for your friend...</option>
@@ -48,35 +49,48 @@
             <option value = "5.07">Weener Kleener Soap(s)</option>
           </select>
         </li>
-        <li>How Many of Item?: <input type = "number", id = "itemHowMany", placeholder = "3" required></li>
-        <li>Address: <input type = "text", id = "address", placeholder = "511 Boren Ave N" required></li>
-        <li>City: <input type="text", id="city", placeholder = "Seattle" required></li>
-        <li>State: <input type="text", id="state", placeholder = "WA" required></li>
-        <li>Zip: <input type="number", id="zip", placeholder = "98109" required></li>
-        <li>Date: <input type="date", id="date", placeholder = "08/31/2015" required></li>
+        <li>How Many of Item?: <input type = "number", id = "itemHowMany", value = "3" required></li>
+        <li>Address: <input type = "text", id = "address", value = "511 Boren Ave N" required></li>
+        <li>City: <input type="text", id="city", value = "Seattle" required></li>
+        <li>State: <input type="text", id="state", value = "WA" required></li>
+        <li>Zip: <input type="number", id="zip", value = "98109" required></li>
+        <li>Date: <input type="date", id="date", value = "08/31/2015" required></li>
       </ul>
-      <button id = "amznprank" type = "button">Generate Prank</button>
+      <button id ="amznprank" type = "button">Generate Prank</button>
     </form>
 
-    <div id = "render"> </div>
-    <div id = "render1"> </div>
-    <div id = "render2"> </div>
-    <div id = "render3"> </div>
-    <div id = "render4"> </div>
-    <div id = "render5"> </div>
-    <div id = "render6"> </div>
-    <div id = "render7"> </div>
-    <div id = "render8"> </div>
-    <div id = "render9"> </div>
-    <div id = "render10"> </div>
-    <div id = "render11"> </div>
-    <div id = "render12"> </div>
-    <div id = "render13"> </div>
-    <div id = "render14"> </div>
-    <div id = "render15"> </div>
-    <div id = "render16"> </div>
-    <div id = "render17"> </div>
-    <div id = "render18"> </div>
+    <div id="amzncontainer">
+        <div id="amzncontainer2">
+            <div id="amznrender"> </div>
+            <div id="amznrender1"> </div>
+            <div id="amznrender2"> </div>
+            <div id="amznrender3"> </div>
+            <div id="amznrender4"> </div>
+            <div id="amznrender5"> </div>
+            <img src="img/amzn_logo.jpg" id ="amznlogo">
+            <div id="amznrender6"> </div>
+            <div id="amznrender7"> </div>
+            <div id="amznrender8"> </div>
+            <div id="amznrender9"> </div>
+            <div id="amznrender10"> </div>
+            <div id="amznrender11"> </div>
+            <div id="amznrender12"> </div>
+            <button id ="amzntrack" type = "button">Track Your Package</button>
+            <div id="amznrender13"> </div>
+            <div id="amznrender14"> </div>
+            <div id="amznrender15"> </div>
+            <button id ="amznorder" type = "button">Order Details</button>
+            <div id="amznrender16"> </div>
+            <div id="amznrender17"> </div>
+            <div id="amznrender18"> </div>
+            <img src="img/amznalsobought.png" id ="amznalso">
+            <br>
+            <button id ="amznpapprove" type = "button">Approve Prank</button>
+            <button id ="amznpdecline" type = "button">Cancel Prank</button>
+            <br>
+        </div>
+    </div>
+
 <hr>
     <footer>
       <p>&copy 2015 Will Kitchell, Anson Menzie, David Sheffield and Steven Washington</p>
