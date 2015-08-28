@@ -23,25 +23,25 @@ var calcAmznCost = function(e){
   };
 
 var renderAmzn = function(e){
-    $('#render').text(prank.name + '  ' + prank.email);
-    $('#render1').text(' Your Amazon.com order of  ' + prank.howMany + '  ' + prank.item + ' has shipped!');
-    $('#render2').text(' Amazon.com <ship-confirm@amazon.com>');
-    $('#render3').text(' Reply-To: Ship-Confirm@amazon.com <ship-confirm@amazon.com>');
-    $('#render4').text(' To: ' + prank.name + '  ' + prank.email);
-    $('#render5').text(' Shipping Confirmation.');
-    $('#render6').text(' Hello ' + prank.name + ' ');
-    $('#render7').text('  ' + prank.item + ' have shipped!');
-    $('#render8').text(' Details');
-    $('#render9').text(' Order #002-0025687-7655223');
-    $('#render10').text(' Expected Delivery Date:                             Shipped To:');
-    $('#render11').text('  ' + moment(prank.date).format('dddd, MMMM DD, YYYY') + '                                  ' + prank.address);
-    $('#render12').text('                                                       ' + prank.city + ', ' + prank.state + ' ' + prank.zip);
-    $('#render13').text(' Total Before Tax: $' + (prank.itemPrice * prank.howMany).toFixed(2));
-    $('#render14').text(' Tax Collected: $' + prank.tax);
-    $('#render15').text(' Shipment Total:  $' + prank.total);
-    $('#render16').text(' Return or replace your items in Your Orders.');
-    $('#render17').text(' We hope you come again soon.');
-    $('#render18').text(' Amazon.com.');
+    $('#amznrender').text(prank.name + '  ' + prank.email);
+    $('#amznrender1').text(' Your Amazon.com order of  ' + prank.howMany + '  ' + prank.item + ' has shipped!');
+    $('#amznrender2').text(' Amazon.com <ship-confirm@amazon.com>');
+    $('#amznrender3').text(' Reply-To: Ship-Confirm@amazon.com <ship-confirm@amazon.com>');
+    $('#amznrender4').text(' To: ' + prank.name + '  ' + prank.email);
+    $('#amznrender5').text(' Shipping Confirmation.');
+    $('#amznrender6').text(' Hello ' + prank.name + ' ');
+    $('#amznrender7').text('  ' + prank.item + ' have shipped!');
+    $('#amznrender8').text(' Details');
+    $('#amznrender9').text(' Order #002-0025687-7655223');
+    $('#amznrender10').text(' Expected Delivery Date:                             Shipped To:');
+    $('#amznrender11').text('  ' + moment(prank.date).format('dddd, MMMM DD, YYYY') + '                                  ' + prank.address);
+    $('#amznrender12').text('                                                       ' + prank.city + ', ' + prank.state + ' ' + prank.zip);
+    $('#amznrender13').text(' Total Before Tax: $' + (prank.itemPrice * prank.howMany).toFixed(2));
+    $('#amznrender14').text(' Tax Collected: $' + prank.tax);
+    $('#amznrender15').text(' Shipment Total:  $' + prank.total);
+    $('#amznrender16').text(' Return or replace your items in Your Orders.');
+    $('#amznrender17').text(' We hope you come again soon.');
+    $('#amznrender18').text(' Amazon.com.');
     console.log('renderAmzn ship notice is working');
   };
 
