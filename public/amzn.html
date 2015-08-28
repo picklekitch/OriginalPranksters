@@ -34,8 +34,8 @@
     <p>Please complete the form below to create your prank message.</p>
     <form>
       <ul id="test">
-        <li>Name of person receiving prank: <input type = "text", id = "name", value = "John Doe" required></li>
-        <li>Email address of person receiving prank: <input type = "text", id = "email", value = "label@email.com" required></li>
+        <li>Name of person receiving prank: <input type = "text", id = "name", placeholder = "John Doe" required></li>
+        <li>Email address of person receiving prank: <input type = "text", id = "email", placeholder = "label@email.com" required></li>
         <li>
           <select name = "Amazon Item", id = "item" required>
             <option value = "0">Choose an Amazon item for your friend...</option>
@@ -49,12 +49,12 @@
             <option value = "5.07">Weener Kleener Soap(s)</option>
           </select>
         </li>
-        <li>How Many of Item?: <input type = "number", id = "itemHowMany", value = "3" required></li>
-        <li>Address: <input type = "text", id = "address", value = "511 Boren Ave N" required></li>
-        <li>City: <input type="text", id="city", value = "Seattle" required></li>
-        <li>State: <input type="text", id="state", value = "WA" required></li>
-        <li>Zip: <input type="number", id="zip", value = "98109" required></li>
-        <li>Date: <input type="date", id="date", value = "08/31/2015" required></li>
+        <li>How Many of Item?: <input type = "number", id = "itemHowMany", placeholder = "3" required></li>
+        <li>Address: <input type = "text", id = "address", placeholder = "511 Boren Ave N" required></li>
+        <li>City: <input type="text", id="city", placeholder = "Seattle" required></li>
+        <li>State: <input type="text", id="state", placeholder = "WA" required></li>
+        <li>Zip: <input type="number", id="zip", placeholder = "98109" required></li>
+        <li>Date: <input type="date", id="date", placeholder = "08/31/2015" required></li>
       </ul>
       <button id ="amznprank" type = "button">Generate Prank</button>
     </form>
@@ -75,7 +75,7 @@
             <div id="amznrender10"> </div>
             <div id="amznrender11"> </div>
             <div id="amznrender12"> </div>
-            <button id ="amzntrack" type = "button">Track Your Package</button>
+            <button id ="amzntrack" type = "button" href="reveal.html">Track Your Package</button>
             <div id="amznrender13"> </div>
             <div id="amznrender14"> </div>
             <div id="amznrender15"> </div>
@@ -85,7 +85,7 @@
             <div id="amznrender18"> </div>
             <img src="img/amznalsobought.png" id ="amznalso">
             <br>
-            <button id ="amznpapprove" type = "button">Approve Prank</button>
+            <button id ="amznpapprove" type = "button" href="reveal.html">Approve Prank</button>
             <button id ="amznpdecline" type = "button">Cancel Prank</button>
             <br>
         </div>
