@@ -29,17 +29,17 @@ var calculateCost = function(e){
 };
 
 var renderFood = function(e){
-  $('#render').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
-  $('#render2').text('Please find below the details of your order:')
-  $('#render3').text('Online Order Number: 338231004');
-  $('#render4').text('Deliver to: ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
-  $('#render5').text('Estimated Delivery Time: 20-30 minutes');
-  $('#render6').text('Order Receipt:');
-  $('#render7').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
-  $('#render8').text('Delivery Fee: $3.00');
-  $('#render9').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
-  $('#render10').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
-  $('#render11').text('Additional Delivery Notes: ' + prankster.note);
+  $('#foodrender').text('Hi ' + prankster.name + '! Thank you for placing your Papa John\'s pizza order via our online ordering service. Your order of ' + prankster.pizzasOrdered + ' ' + prankster.sizeName + ' ' + prankster.ptype + ' Pizzas is on its way to you now!');
+  $('#foodrender2').text('Please find below the details of your order:')
+  $('#foodrender3').text('Online Order Number: 338231004');
+  $('#foodrender4').text('Deliver to: ' + prankster.address + ', ' + prankster.city + ', ' + prankster.state + ' ' + prankster.zip);
+  $('#foodrender5').text('Estimated Delivery Time: 20-30 minutes');
+  $('#foodrender6').text('Order Receipt:');
+  $('#foodrender7').text(prankster.sizeName + ' ' + prankster.ptype + ' Pizza (x' + prankster.pizzasOrdered + '): ' + prankster.pizzasOrdered + '(' + prankster.size + ') = $' + (prankster.size*prankster.pizzasOrdered));
+  $('#foodrender8').text('Delivery Fee: $3.00');
+  $('#foodrender9').text('Tax: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*.085).toFixed(2));
+  $('#foodrender10').text('Grand Total: $' + (((prankster.size * prankster.pizzasOrdered) + 3)*1.085).toFixed(2));
+  $('#foodrender11').text('Additional Delivery Notes: ' + prankster.note);
   console.log('writing the middle section');
 };
 
@@ -47,6 +47,7 @@ $('#pizzaprank').on('click', function(e){
   var x = createFood();
   calculateCost(x);
   renderFood();
+  $('#foodrendercontainer').toggle();
 });
 
 
