@@ -1,5 +1,6 @@
 ### Code Fellows Bootcamp - Final Project - Original Pranksters
 
+
 #### Original Pranksters - Summary
 + This is project allows you to prank your friends with 4 different pranks: 1) Fake Pizza Order, 2) Fake Amazon Order, 3) Fake Fantasy Sports Catastrophic Injury, and 4) Fake Dr. Apt.
 + It was important to us to keep this fun, and not mean. We control that by making each prank a Mad Lib like template, where the user submits information about their friend that they want to prank.
@@ -15,6 +16,7 @@
 + It really helped our project that we used a consistent branch naming convention. This prevented merge conflicts until the last day, and that was unavoidable.
 + One of the harder problems was rendering the date in JS in a manner similar to how Amazon does it. We had to use [Moment.js](http://momentjs.com/) and [Bower](http://bower.io/) to achieve this.
 
+
 ### CSS & HTML:
 + We are using [Google Font - Special Elite cursive](https://fonts.googleapis.com/css?family=Special+Elite|Gochi+Hand|Chelsea+Market|Kite+One|Happy+Monkey|Indie+Flower|Bevan) on our index.html and throughout our site.
 + Steven Washington and Anson Menzie are largely responsible for the look and feel of this website.
@@ -25,6 +27,7 @@
 + We also used stylistic elements from Amazon.com and Papa John's Pizza to arrange the look & feel of our Pizza and Amazon pranks.
 + We also pulled in Star Wars images from a Google search for our About Us page.
 
+
 #### Future Functionality:
 + We decided that there were some things that we originally wanted to do, which were beyond the scope of our Code Fellows Bootcamp Final Project.
 + This app needs functionality to authenticate users on the front end. We had envisioned that people could use a verifiable social media account to authenticate. The point is that we want users to be real people.
@@ -32,6 +35,13 @@
 + If you were the recipient of the prank, you'd have the ability to either prank your friend back and/or use information to find out who pranked you.
 + The app needs back-end server-side funcationality that protects sensitive user data (email address and phone numbers) and only uses the information to complete the prank, but does not store it. We don't want to be responsible for PII.
 + We could re-code the js to make it more DRY, including an object constructor with prototypes, and possibly one main prank object that is used and called by all pranks with only specific prototypes for the additional functionality that would be needed to pull off that prank.
+
+
+#### Final Project Haiku:
++ Final Project Week
++ It May Not Be DRY; It Works!
++ Original Pranksters
+
 
 #### Final Parting Shot:
 + It was a pleasure working together as a team. The Original Pranksters team rocks!
