@@ -4,7 +4,6 @@
   "description": "Prank your friends",
   "main": "server.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -15,6 +14,17 @@
     "prank"
   ],
   "author": "Will Kitchell",
+  "contributors": [
+    {
+      "name": "Anson Menzie"
+    },
+    {
+      "name": "David Sheffield"
+    },
+    {
+      "name": "Steven Washington"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/picklekitch/OriginalPranksters/issues"
